@@ -1,17 +1,19 @@
+const connection = require("../config/database");
+
 const getHomepage = (req, res) => {
-    // process data
-    // call model
-    res.send("Hello World! My name is Luan");
-}
+    return res.render("home.ejs")
+};
 
 const getABC = (req, res) => {
-    res.send("check ABC")
-}
+ res.send("check ABC");
+};
 
 const getHaianhem = (req, res) => {
-    res.render("example.ejs")
-}
+ res.render("example.ejs");
+};
 
 module.exports = {
-    getHomepage, getABC, getHaianhem
-}
+ getHomepage,
+ getABC,
+ getHaianhem,
+};
